@@ -1,0 +1,115 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.product-Card {
+  height: calc(100vh - 16.5px);
+  background-color: hsl(22deg 42% 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+  font-family: 'Montserrat';
+}
+.card-custom {
+  display: flex;
+  max-width: 650px;
+  height: 550px;
+  background-color: white;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 10px;
+}
+.card-custom .image {
+  background-image: url('./images/image-product-desktop.jpg');
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card-custom .content {
+  padding: 40px;
+  width: 50%;
+}
+.content .product-type,
+.content .main-product,
+.content .product-description {
+  margin-bottom: 15px;
+}
+.content .main-product {
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.content .product-type,
+.content .product-description {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 500;
+}
+.content .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: Fraunces;
+  margin-bottom: 20px;
+}
+.content .price h1 {
+  font-weight: 700;
+}
+.content .price h1 {
+  color: hsl(162deg 44% 35%);
+}
+.content .price h1,
+.content .price h6 {
+  margin-bottom: 0;
+}
+.addTocart-btn {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: hsl(162deg 44% 35%);
+  color: white;
+  border-style: none;
+}
+.addTocart-btn:hover {
+  background-color: hsl(161deg 54% 16%);
+}
+@media screen and (max-width: 1200px) {
+  .card-custom {
+    max-width: 620px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card-custom {
+    max-width: 580px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-custom {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-custom {
+    display: initial;
+    width: 90%;
+    height: fit-content;
+  }
+  .card-custom .image {
+    height: 280px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-position: center;
+  }
+  .card-custom .content {
+    width: 100%;
+  }
+}
